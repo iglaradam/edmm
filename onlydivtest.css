@@ -1,0 +1,338 @@
+@font-face {
+    font-family: arialBlack;
+    src: url(arial-black.ttf);
+}
+
+/*------------------Felső léc------------------*/
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: arialBlack;
+    background-color: #202020;
+}
+
+.top-bar {
+    overflow: hidden;
+    background-color: #404040;
+    border-bottom: orange;
+}
+
+.top-bar a {
+    float: left;
+    color: rgb(211, 211, 211);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.top-bar a:hover {
+    color: orange;
+}
+
+.top-bar a.active {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+.top-bar-icon {
+    height: 24px;
+    float: left;
+    padding-right: 5px;
+}
+
+/*------------------Oldalléc------------------*/
+
+.left-bar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 53,5px;
+    left: 0;
+    background-color: #575757;
+    overflow-x: hidden;
+    padding-top: 20px;
+    box-shadow: inset 0 10px 12px -7px black;
+    border-right: 2px solid orange;
+}
+
+.left-bar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(211, 211, 211);
+    display: block;
+}
+
+.left-bar a:hover {
+    color: orange;
+    
+  }
+
+.left-bar-a-active {
+    border-left: 4px solid orange;
+}
+
+  @media screen and (max-height: 450px) {
+    .left-bar {padding-top: 15px;}
+    .left-bar a {font-size: 18px;}
+  }
+
+/*------------------Main Area------------------*/
+
+.main-area {
+    z-index: 101;
+    position: absolute;
+    left: 200px;
+    top: 54px;
+    width: 1715px; 
+    height:911px; 
+    padding: 0px; 
+    border: 0px;
+}
+
+.main-area h1 {
+    color: white;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/*------------------Leauge of Legends------------------*/
+
+.main-area-lol {
+    position: relative;
+    width: 1714px;
+    height: 911px;
+    top: 0px;
+    left: 202px;
+    border: 0px;
+}
+
+.main-area-lol-banner {
+    z-index: 101;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+}
+
+.main-area-lol-text-1-h2 {
+    position: relative;
+    width: 270px;
+    left: 30px;
+    color: white;
+    border: 0px;
+
+}
+
+.main-area-lol-text-1 p {
+    color: white;
+    position: relative;
+    width: 1200px;
+    left: 20px;
+    border: 0px;
+}
+
+.main-area-lol-text-1-2 {
+    border-left: 4px solid orange;
+    position: relative;
+    width: 1230px;
+    left: 50px;
+    display: inline-block;
+}
+
+.main-area-lol-pic-1 {
+    position: relative;
+    width: 304;
+    height: 171;
+    left: 90px;
+    top: 20px;
+    border-bottom: 2px solid orange;
+    border-top: 2px solid orange;
+}
+
+.pic-1-plus-text-1 {
+    display: flex;
+}
+
+.main-area-lol-list-1 {
+    width: 1200px;
+}
+
+.main-area-lol-list-1 li {
+    color: white;
+    position: relative;
+    left: 28px;
+}
+
+.main-area-lol-list-1 p {
+    color: white;
+    position: relative;
+    left: 30px;
+    font-family: Roobert,Helvetica Neue,Helvetica,Arial,sans-serif!important;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: orange;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.main-area-lol-list-plus-pic-1 {
+    display: flex;
+    width: 1696px;
+    height: 350px;
+}
+
+.summoners-rift {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 30px;
+    top: 0px;
+    box-shadow: 3px 3px 3px 3px black;
+    border: 1px solid orange;
+}
+
+.twisted-treeline {
+    width: 176;
+    height: 99;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    box-shadow: 3px 3px 3px 3px black;
+    border: 1px solid orange;
+}
+
+.howling-abyss {
+    width: 176;
+    height: 99;
+    position: relative;
+    top: 220px;
+    box-shadow: 3px 3px 3px 3px black;
+    border: 1px solid orange;
+}
+
+.main-area-lol-pic-2 {
+    width: 455px;
+    height: 347px;
+    position: relative;
+    left: 45px;
+    background-color: #575757;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+.main-area-lol-text-3 p {
+    color: white;
+    position: relative;
+    width: 1200px;
+    left: 20px;
+    border: 0px;
+    text-align: right;
+}
+
+.main-area-lol-text-3-2 {
+    border-right: 4px solid orange;
+    position: relative;
+    width: 1230px;
+    left: 420px;
+    display: inline-block;
+}
+
+.main-area-lol-text-3-h2 {
+    position: relative;
+    width: 330px;
+    left: 1330px;
+    color: #dbdbdb;
+}
+
+.pic-3-plus-text-3 {
+    display: flex;
+}
+
+.main-area-lol-pic-3 {
+    position: relative;
+    width: 224;
+    height: 126;
+    right: 1100px;
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+.main-area-lol-video-1 {
+    position: relative;
+    border: 0px;
+    width: 640px;
+    height: 360px;
+    left: 400px;
+    top: 50px;
+    box-shadow: 3px 3px 3px 3px rgb(167, 108, 0);
+}
+
+.main-area-lol-video-1 video {
+    position: relative;
+    width: 640px;
+    height: 360px;
+    left: 0px;
+    top: 0px;
+}
+
+/*---------------------PUBG-------------------------*/
+
+.main-area-pubg-text-1 p {
+    color: white;
+    position: relative;
+    width: 1200px;
+    left: 20px;
+    top: 15px;
+}
+
+.main-area-pubg-text-1-2 {
+    border-left: 4px solid orange;
+    position: relative;
+    width: 1230px;
+    left: 50px;
+    top: 20px;
+    display: inline-block;
+}
+
+.main-area-pubg-text-1-2-2 p {
+    color: white;
+    position: relative;
+    width: 1200px;
+    left: 20px;
+}
+
+.main-area-pubg-text-3-h2 {
+    position: relative;
+    width: 330px;
+    left: 1470px;
+    color: #dbdbdb;
+}
+
+.main-area-r6-text-3-h2 {
+    position: relative;
+    width: 330px;
+    left: 1400px;
+    color: #dbdbdb;
+}
